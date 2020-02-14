@@ -1,0 +1,91 @@
+:root{
+    --main-color: #215ad4;
+}
+
+#page-wrapper {
+    padding-left: 0px;
+    height: 100%;
+}
+
+#page-wrapper,
+#sidebar-wrapper {
+  transition: all .4s ease 0s;
+}
+
+#page-wrapper.open{
+    padding-left: 200px;
+}
+
+#page-wrapper.open #sidebar-wrapper {
+    left: 0px;
+}
+
+#sidebar-wrapper {
+    margin-left: 0px;
+    left: -200px;
+    width: 200px;
+    position: fixed;
+    height: 100%;
+    z-index: 999;
+    background: #19222a;
+}
+
+#content-wrapper {
+    padding-left: 0;
+    margin-left: 0;
+    width: 100%;
+    height: auto;
+}
+
+
+/**********************/
+/* sidebar-header
+/**********************/
+
+.sidebar-header {
+    display: flex;
+    text-align: center;
+    height: 60px;
+    background-color: #215ad4;
+    padding: 0px 10px;
+}
+
+.sidebar-header-title {
+    font-weight: 400;
+    font-size: 1.2em;
+    color: rgb(247, 241, 241);
+}
+
+.sidebar-main {
+    padding: 10px 0;
+}
+
+.sidebar {
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+.sidebar-list {
+    
+}
+
+.sidebar-list a {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    padding: 10px 15px;
+    box-sizing: border-box;
+    color: rgb(199, 199, 199);
+    border-left: 3px solid transparent;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+    transition: all .1s ease 0s;
+}
+
+.sidebar-list a:hover {
+    background-color: #333;
+    color: rgb(255, 255, 255);
+    border-left: 3px solid #215ad4;
+    text-indent: 0px;
+}

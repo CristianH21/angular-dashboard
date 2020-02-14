@@ -1,0 +1,38 @@
+<div id="page-wrapper" [ngClass]="{'open': toggle}">
+
+  <!-- SIDEBAR -->
+  <div id="sidebar-wrapper">
+    <div class="sidebar-header">
+      <h2 class="sidebar-header-title">Menú</h2>
+    </div>
+    <div class="sidebar-main">
+      <ul class="sidebar">
+        <li class="sidebar-list">
+          <a routerLink="">
+            Dashboard
+          </a>
+        </li>
+        <li class="sidebar-list">
+          <a routerLink="">
+            One
+          </a>
+        </li>
+        <li class="sidebar-list">
+          <a routerLink="">
+            Two
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="sidebar-footer">
+      
+    </div>
+  </div>
+  <!-- MAIN CONTENT -->
+  <div id="content-wrapper">
+    <app-header></app-header>
+    <app-content></app-content>
+  </div>
+
+</div>
+<router-outlet></router-outlet>
